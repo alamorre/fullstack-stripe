@@ -27,3 +27,17 @@ django-admin startproject server .
 django-admin startapp users
 django-admin startapp blog
 ```
+
+Create the `.gitignore` file with the following:
+
+```
+env/
+*.sqlite3
+```
+
+Create database and first user:
+
+```
+./manage.py migrate
+./manage.py createsuperuser --email <YOUR_EMAIL> --username <YOUR_USERNAME>
+```
